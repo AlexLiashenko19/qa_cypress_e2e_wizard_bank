@@ -72,7 +72,7 @@ describe('Bank app', () => {
 
     cy.get('[ng-class="btnClass1"]').click();
 
-    cy.get('table').should('not.contain', 'tbody');
+    cy.get('table').should('not.contain', 'tbody tr');
 
     cy.get('[ng-show="logout"]').click();
 
